@@ -1,11 +1,6 @@
 ## Vim locks
 *.swp
 
-## Output
-*.pdf
-*.ps
-*.dvi
-
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
