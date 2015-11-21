@@ -1,0 +1,27 @@
+\section{Линейные представления (действия) групп}
+
+Зафиксируем поле $\K$, над которым будем рассматривать векторное пространство
+$V(+, \cdot, \cdot)$ (умножение на скаляр и на элементы $G$).
+
+\begin{df}
+	Задано \it{линейное действие}, если задано умножение элементов из $V$
+	слева на элементы из $G$, $\fA g \in G, v \in V (g, v) \mapsto gv \in V,$
+	\sth $\fA v, v_1, v_2 \in V \fA g, h \in G, \fA \la \in \K$
+	\begin{points}{-3}
+		\item $(gh)v = g(hv)$
+		\item $ev = v$
+		\item $g(v_1 + v_2) = gv_1 + gv_2$
+		\item $g(\la v) = \la (gv)$
+	\end{points}
+
+	\it{Линейное представление} $\rh \colon G \to \GL(V)$, $\rh(g)(v) = gv$
+	и обратно $gv = \rh(g)(v)$.
+\end{df}
+\begin{denote}
+	$(G, V, \rh)$ эквивалетно записи $\rh = (G, V)$.
+\end{denote}
+\begin{df}
+	Подпространство $U \subseteq V$ является \it{подредставлением}, если
+	оно инвариантно относительно действий элементов $G$, \ie
+	$\fA u \in U \fA g \in G gu \in U$. 
+\end{df}
