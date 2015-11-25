@@ -38,3 +38,6 @@ Changes in DMVN Style packages
 20 Apr 2015, v 1.37
 [f] Make workable with babel and utf8
 [+] props environment and \prpy command
+
+25 Nov 2015, v 1.38
+[+] comm environment for commentaries
