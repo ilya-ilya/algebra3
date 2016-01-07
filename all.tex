@@ -2,8 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{pscyr}
-\usepackage[nosimple,dots,thmitshape,nodiagram]{dmvn}
+\usepackage{mathtools}
 \usepackage{amsmath, amssymb, amsfonts}
+\usepackage[nosimple,dots,thmitshape,nodiagram]{dmvn}
 \usepackage[dvips]{graphicx}
 \usepackage[all]{xy}
 \CompileMatrices
@@ -15,8 +16,8 @@
 \topmargin=-25mm
 \tolerance=4000
 
-%	К сожалению, я не знаю, что это делает, но пацаны говорят,
-%	что можно будет кликать по ссылкам
+%	XXX:К сожалению, я не знаю, что это делает, но пацаны говорят,
+%	что можно будет кликать по ссылкам, на практике оказалось, что нет.
 \usepackage{xcolor}
 \usepackage{hyperref}
 \definecolor{linkcolor}{HTML}{000000}
@@ -35,8 +36,13 @@
 
 \newcommand{\Cx}{\mathbb{C}}
 \newcommand{\Zm}[1]{\mathbb{Z}_{#1}}
-\newcommand{\fA}{~\forall}
-\newcommand{\Ex}{~\exists}
+\newcommand{\fA}{~\forall\;}
+\newcommand{\Ex}{~\exists\;}
+\newcommand{\Exo}{~\exists\,!\;}
+
+% right :=
+\newcommand{\deq}{\coloneqq}
+
 \dmvntitle{Голод Е.C.}{Алгебра}{3 семестр, первый поток}{}{\today}
 \include{p0} % Введение
 \include{p1} % Аб группы
