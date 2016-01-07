@@ -1,6 +1,9 @@
 ## Vim locks
 *.swp
 
+# Xy-Pic matrices
+*.xyc
+
 ## Output
 *.pdf
 *.ps

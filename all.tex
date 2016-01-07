@@ -5,14 +5,15 @@
 \usepackage[nosimple,dots,thmitshape,nodiagram]{dmvn}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage[dvips]{graphicx}
-\usepackage{xy}
+\usepackage[all]{xy}
+\CompileMatrices
 
 \textwidth=500pt
 \textheight=750pt
 \oddsidemargin=20pt
 \hoffset=-1.5cm
 \topmargin=-25mm
-\tolerance = 4000
+\tolerance=4000
 
 %	К сожалению, я не знаю, что это делает, но пацаны говорят,
 %	что можно будет кликать по ссылкам
@@ -23,10 +24,15 @@
 \hypersetup{pdfstartview=FitH, linkcolor=linkcolor, urlcolor=urlcolor, colorlinks=true}
 
 \begin{document}
+% Transoceanization
 \renewcommand{\emptyset}{\varnothing}
+\renewcommand{\phi}{\varphi}
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
 \renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\subsetneq}{\varsubsetneq}
+\renewcommand{\supsetneq}{\varsupsetneq}
+
 \newcommand{\Cx}{\mathbb{C}}
 \newcommand{\Zm}[1]{\mathbb{Z}_{#1}}
 \newcommand{\fA}{~\forall}
