@@ -1,6 +1,7 @@
 Changes in DMVN Style packages
 ==============================
 (C) DMVN Corporation, 2004--2006.
+(C) Ilya Raiko 2015,2016
 
 [f] = fix
 [c] = code change
@@ -39,6 +40,9 @@ Changes in DMVN Style packages
 [f] Make workable with babel and utf8
 [+] props environment and \prpy command
 
-07 Jan 2016, v 1.38
+08 Jan 2016, v 1.38
 [+] comm environment for commentaries
+[+] \ubt and \obt commands for \ubderbracket and \overbracket from mathtools
+[+] \deq for := symbol from mathtools
+[+] reductions for \subsetneq and \supsetneq (with var because only half of equation sign needed)
 [-] props and \prpy as unusefull

@@ -1,5 +1,5 @@
-\ProvidesPackage{dmvnbase}[2006/06/01 v1.36 DMVN Base LaTeX Package]
-\RequirePackage{amssymb,amsmath,mathrsfs}
+\ProvidesPackage{dmvnbase}[2016/01/08 v1.38 DMVN Base LaTeX Package]
+\RequirePackage{amssymb,amsmath,mathrsfs,mathtools}
 
 % ===============================================================
 % DMVN Local Coordinates
@@ -618,6 +618,8 @@
 \newcommand{\sups}{\supset}
 \newcommand{\subseq}{\subseteq}
 \newcommand{\supseq}{\supseteq}
+\newcommand{\subsneq}{\varsubsetneq}
+\newcommand{\supsneq}{\varsupsetneq}
 \newcommand{\wo}{\smallsetminus}
 \newcommand{\ol}{\overline}
 \newcommand{\os}{\overset}
@@ -627,6 +629,8 @@
 \newcommand{\wt}{\widetilde}
 \newcommand{\ub}{\underbrace}
 \newcommand{\ob}{\overbrace}
+\newcommand{\ubt}{\underbracket}
+\newcommand{\obt}{\overbracket}
 \newcommand{\cln}{\colon}
 \newcommand{\wg}{\wedge}
 \newcommand{\ulim}{\varlimsup}
@@ -650,6 +654,7 @@
 \newcommand{\lsd}[1]{\ul{\mathrm{S}}_{{#1}}}                                            % lower Darboux sum
 \newcommand{\pf}[2]{\frac{\pd #1}{\pd #2}}                                              % partial derivative fraction
 \newcommand{\dv}{\smash{\mskip3mu\lower1pt\hbox{\vdots}\mskip3mu}}                      % multiple of (rus)
+\newcommand{\deq}{\coloneqq}                                                            % :=
 
 % Arrows
 \renewcommand{\to}{\rightarrow}
