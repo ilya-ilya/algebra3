@@ -1,0 +1,6 @@
+#!/bin/bash
+pdflatex -draftmode $1
+iec2utf ${1/tex/idx}
+makeindex ${1/tex/idx}
+pdflatex $1
+iec2utf ${1/tex/idx}

@@ -1,4 +1,7 @@
-\documentclass[a4paper, 12pt]{article}
+\documentclass[a4paper, 12pt]{report}
+\makeindex
+
+
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{pscyr}
@@ -9,6 +12,13 @@
 \usepackage[all]{xy}
 \CompileMatrices
 
+%	XXX:К сожалению, я знаю, что это делает, пацаны говорят и это правда,
+%	что можно будет кликать по ссылкам, и на практике оказалось, что да.
+\usepackage[unicode]{hyperref}
+\hypersetup{
+	debug = true,
+}
+
 \textwidth=500pt
 \textheight=750pt
 \oddsidemargin=20pt
@@ -16,29 +26,27 @@
 \topmargin=-25mm
 \tolerance=4000
 
-%	XXX:К сожалению, я не знаю, что это делает, но пацаны говорят,
-%	что можно будет кликать по ссылкам, на практике оказалось, что нет.
-\usepackage{xcolor}
-\usepackage{hyperref}
-\definecolor{linkcolor}{HTML}{000000}
-\definecolor{urlcolor}{HTML}{000000}
-\hypersetup{pdfstartview=FitH, linkcolor=linkcolor, urlcolor=urlcolor, colorlinks=true}
-
 \begin{document}
+% good reference for equations
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+% better equal by definition
+\renewcommand{\eqdef}{\triangleq}
+
 % Transoceanization
 \renewcommand{\emptyset}{\varnothing}
 \renewcommand{\phi}{\varphi}
 \renewcommand{\epsilon}{\varepsilon}
 
 \newcommand{\Cx}{\mathbb{C}}
+\newcommand{\Hx}{\mathbb{H}}
 \newcommand{\Zm}[1]{\mathbb{Z}_{#1}}
 \newcommand{\fA}{~\forall\;}
 \newcommand{\Ex}{~\exists\;}
 \newcommand{\Exo}{~\exists\,!\;}
 
-% right :=
 
 \dmvntitle{Голод Е.C.}{Алгебра}{3 семестр, первый поток}{}{\today}
+\include{misc} % TOC и Предметный указатель
 \include{p0} % Введение
 \include{p1} % Аб группы
 \include{p2} % Кольца, алгебры
